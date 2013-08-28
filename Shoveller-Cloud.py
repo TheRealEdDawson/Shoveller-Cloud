@@ -18,7 +18,8 @@ mimetypes.add_type('text/plain', '.php', strict=True)
 
 # Checking that all the arguments were entered on the command line, exiting with a message if not.
 if len(sys.argv) < 5:
-    argumentsnotset = '\nError: one or more arguments were not passed. \n\nUsage is like so: \n\nPython Shoveller-Cloud.py access-token.txt shared-secret.txt STARTING-DIRECTORY-PATH datestamp=on'
+    argumentsnotset = """\nError: one or more arguments were not passed. Usage is like so: 
+                           Python Shoveller-Cloud.py access-token.txt shared-secret.txt STARTING-DIRECTORY-PATH datestamp=on"""
     print argumentsnotset
     sys.exit(1)	
 
